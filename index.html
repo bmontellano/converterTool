@@ -18,7 +18,7 @@
         <ion-title>Calculator Tool</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
+    <ion-content class="ion-padding">
       <ion-item>
         <ion-label position="floating">Height</ion-label>
         <ion-input id="height-input"></ion-input>
@@ -27,15 +27,18 @@
         <ion-label position="floating">Weight</ion-label>
         <ion-input id="weight-input"></ion-input>
       </ion-item>
-      <ion-button id="calculate-BMI-Button">Calculate</ion-button>
-      <div id="result-BMI">
-
-      </div>
+      <ion-grid class="ion-text-center ion-margin" id="result-BMI">
+        <ion-row>
+          <ion-col>
+            <ion-button id="calculate-BMI-Button">Calculate</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button id="reset-BMI">reset</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-content>
   </ion-app>
-
-
-
 </body>
 
 </html>
