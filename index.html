@@ -30,10 +30,18 @@
       <ion-grid class="ion-text-center ion-margin" id="result-BMI">
         <ion-row>
           <ion-col>
-            <ion-button id="calculate-BMI-Button">Calculate</ion-button>
+            <ion-button fill="outline" id="calculate-BMI-Button">
+              <ion-icon slot="icon-only" name="calculator-outline"></ion-icon>
+            </ion-button>
           </ion-col>
           <ion-col>
-            <ion-button id="reset-BMI">reset</ion-button>
+            <ion-button fill="outline" id="reset-BMI">
+              <ion-icon slot="icon-only" name="cut-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col id="bmi-result">
           </ion-col>
         </ion-row>
       </ion-grid>
